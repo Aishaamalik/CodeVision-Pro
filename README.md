@@ -21,87 +21,95 @@ A professional **Streamlit** application that transforms images into production-
 ### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
-2. Environment Setup
-Create a .env file in the project root and add your GROQ API key:
+```
 
-ini
-Copy code
+### 2. Environment Setup
+Create a `.env` file in your project root and add your **GROQ API key**:
+
+```ini
 GROQ_API_KEY=your_groq_api_key_here
-3. Run the Application
-bash
-Copy code
+```
+
+### 3. Run the Application
+```bash
 streamlit run app.py
-4. Access the App
-Open your browser and go to:
-👉 http://localhost:8501
+```
 
-🧠 Usage Guide
-1. Select Analysis Type
-Smart Detection — Auto-detects the best framework.
+### 4. Access the App
+Open your browser and go to:  
+👉 [http://localhost:8501](http://localhost:8501)
 
-Web Application — Generates HTML/CSS/JavaScript code.
+---
 
-Mobile Application — Generates React Native or Flutter code.
+## 🧠 Usage Guide
 
-2. Input Image
-Upload an image file (.png, .jpg, .jpeg, .gif, .bmp, .webp).
+### 1. Select Analysis Type
+- **Smart Detection** — Auto-detects the best framework  
+- **Web Application** — Generates HTML/CSS/JavaScript code  
+- **Mobile Application** — Generates React Native or Flutter code  
 
-Or provide an image URL.
+### 2. Input Image
+- Upload an image file (`.png`, `.jpg`, `.jpeg`, `.gif`, `.bmp`, `.webp`)  
+- Or provide an **image URL**
 
-3. Generate Code
-Click "Generate Code" to analyze the image.
+### 3. Generate Code
+- Click **"Generate Code"** to analyze the image  
+- View generated code instantly in the output section  
+- Optionally, **download** the code as a file  
 
-View generated code instantly in the output section.
+### 4. History
+- View your recent analyses in the sidebar  
+- **Restore** previous analyses  
+- **Clear history** anytime  
 
-Optionally, download the code as a file.
+---
 
-4. History
-View your recent analyses in the sidebar.
+## 🖼️ Supported Image Types
 
-Restore previous analyses.
+- **Formats:** PNG, JPG, JPEG, GIF, BMP, WebP  
+- **Sources:** Local uploads or web URLs  
+- **Optimized for:** UI/UX screenshots and mockups  
 
-Clear history anytime.
+---
 
-🖼️ Supported Image Types
-Formats: PNG, JPG, JPEG, GIF, BMP, WebP
+## 🤖 AI Models
 
-Sources: Local uploads or web URLs
+**Llama 4 Scout** — `meta-llama/llama-4-scout-17b-16e-instruct`
 
-Optimized for: UI/UX screenshots and mockups
+- Advanced multimodal model with strong vision capabilities  
+- Supports multilingual interaction and tool use  
+- 128K context window  
+- Maximum: **33 megapixels per image**, up to **5 images per request**
 
-🤖 AI Models
-Llama 4 Scout — meta-llama/llama-4-scout-17b-16e-instruct
+---
 
-Advanced multimodal model with strong vision capabilities
+## 🎨 Theme & Design
 
-Supports multilingual interaction and tool use
+Professional **yellow–black–gold** color scheme featuring:
+- Animated title and interface elements  
+- Smooth hover effects  
+- Consistent button styling  
+- **Orbitron** professional typography  
+- Fully **responsive** design  
 
-128K context window
+---
 
-Maximum: 33 megapixels per image, up to 5 images per request
+## 🧩 Technical Stack
 
-🎨 Theme & Design
-Professional yellow–black–gold color scheme featuring:
+| Component | Technology |
+|------------|-------------|
+| **Frontend** | Streamlit with custom CSS |
+| **AI Vision** | Groq API (Llama Vision Models) |
+| **Image Processing** | Pillow (PIL) |
+| **HTTP Requests** | requests |
+| **Environment Management** | python-dotenv |
 
-Animated title and interface elements
+---
 
-Smooth hover effects
+## 📜 License
 
-Consistent button styling
+This project is open source and available under the **MIT License**.
 
-Orbitron professional typography
+---
 
-Fully responsive design
-
-🧩 Technical Stack
-Component	Technology
-Frontend	Streamlit with custom CSS
-AI Vision	Groq API (Llama Vision Models)
-Image Processing	Pillow (PIL)
-HTTP Requests	requests
-Environment Management	python-dotenv
-
-📜 License
-This project is open source and available under the MIT License.
-
-© 2025 CodeVision Pro — Powered by Groq AI + Streamlit
+> © 2025 **CodeVision Pro** — Powered by **Groq AI + Streamlit**
